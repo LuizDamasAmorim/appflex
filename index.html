@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>APP Flex</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Etanol ou Gasolina?</h1>
+
+        <form name="frmFlex" onsubmit="return calcular() ">
+
+
+            <img src="img/neutro.png" alt="display" id="status">
+
+            <input type="number" step="0.01" name="inputEtanol" placeholder="Etanol" required>
+            <!--"required" serve para indicar que é obrigatorio digitar-->
+    
+            <input type="number" step="0.01" name="inputGasolina" placeholder="Gasolina" required>
+            <!-- O "step = 0.01" serve para funcionar números quebrados na caixa de input-->
+    
+            <input type="submit" value="Calcular">
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
